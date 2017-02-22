@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "WWU Auto Registration Extension",
+	"description": "This extension spams the Add/Drop Classes until it's available to submit CRNs numbers.",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["https://admin.wwu.edu/pls/wwis/*", "file:///*/*"],
+			"js": ["content.js"]
+		}
+	],
+	"permissions": ["activeTab"]
+}
